@@ -390,14 +390,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
 
     padding-bottom: 30px;
 }
 
-.socials-item {
-    width: 44px;
-    height: 44px;
+.socials-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socials-link {
@@ -545,7 +543,6 @@ img {
     position: relative;
     width: 44px;
     height: 44px;
-    margin-right: 10px;
     border-radius: 50%;
     fill: var(--primary-white-color);
     background-color: rgba(255, 255, 255, .1);
